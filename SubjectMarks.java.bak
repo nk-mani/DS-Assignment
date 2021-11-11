@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+class SubjectMarks
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the three digit value ");
+		int m=sc.nextInt();
+		int p=sc.nextInt();
+		int c=sc.nextInt();
+		
+    if(m>60 && p>60 && c>60)
+		System.out.println("pass");
+	else if( m>60 ||p>60 && m>60 || c>60 && p>60 || c>60)
+		System.out.println("promoted");
+	
+    else 
+		System.out.println("fail");
+
+	}
+}

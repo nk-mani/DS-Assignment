@@ -1,0 +1,23 @@
+import java.util.*;
+class IncumTax 
+{
+	public static void main(String[] args) 
+	{
+		double sal,t=0;
+		System.out.println("Enter annual income ");
+		Scanner sc=new Scanner(System.in);
+		sal=sc.nextDouble();
+
+		if(sal>0 && sal<=180000)
+			System.out.println("Slot A no tax liability");
+		else if(sal>18000 && sal<=300000){
+			    t=sa*0.10;
+				System.out.println("Slot B no tax liability rs"+t);
+		else if(sal>300000 && sal<=500000){
+			      t=sal*0.20;
+			System.out.println("Slot C  tax liability rs."+t);}
+		else if (sal>500000 && sal<=1000000){
+			       t=sal*0.30;
+				System.out.println("Slot D tax liability rs."+t); }
+				sc.close();
+}
